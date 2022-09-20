@@ -3,7 +3,7 @@ date: '2019-09-05'
 title: 'Backend Intern'
 company: 'Webcube'
 location: 'Remote'
-range: 'Sep 2021 - April 2019'
+range: 'Sep 2021 - April 2022'
 url: 'https://webcube.in/'
 ---
 

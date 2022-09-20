@@ -3,7 +3,7 @@ date: '2022-5-9'
 title: 'SDE Intern'
 company: 'Visa'
 location: 'Bangalore, India'
-range: 'May - July 2017'
+range: 'May - July 2022'
 url: 'https://www.visa.co.in/'
 ---
 
