@@ -167,7 +167,7 @@ const About = () => {
           <div className="wrapper">
             <img
               className="img"
-              src="https://i.ibb.co/0FpSSjR/myimage.jpg"
+              src="https://i.ibb.co/YNzYWLL/IMG-20230311-171018-2.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
