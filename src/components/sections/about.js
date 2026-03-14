@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-// import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
@@ -18,6 +17,7 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
+
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
@@ -46,6 +46,7 @@ const StyledText = styled.div`
     }
   }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -118,21 +119,19 @@ const About = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
+    if (prefersReducedMotion) return;
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
   const skills = [
+    'Java',
     'TypeScript',
-    'JavaScript (ES6+)',
+    'Go',
     'React',
+    'Spring Boot',
+    'DynamoDB',
     'PostgreSQL',
-    'Node.js',
-    'Firebase',
-    'Django',
+    'AWS',
   ];
 
   return (
@@ -143,23 +142,30 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello, I'm Abhinandan and I love creating things for the web. My interest in
-              web development started back in 2020 when I was doing competitive coding and a simple
-              idea of creating a gamified platform for coders— turned out into a complete package
-              for codeforces, and learnt a lot of HTML, CSS &amp; JavaScript there!
+              Hello! I'm <strong>Abhinandan</strong>, a software engineer passionate about building
+              scalable backend systems and developer-focused tools.
             </p>
 
             <p>
-              Fast-forward to today, and I am now building impactful projects with the knowledge of
-              MERN stack. My main focus these days is looking for opportunities which are building
-              accessible, inclusive products and digital experiences.
+              Currently, I work as a Software Developer at Goldman Sachs, where I build and
+              maintain backend services powering large-scale financial systems. My work involves
+              designing reliable APIs, optimizing service performance, and building scalable data
+              models using technologies like Java, Spring Boot, and DynamoDB.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>
+              Outside of work, I enjoy building side projects that explore distributed systems,
+              developer tooling, and AI-powered workflows — such as Beets, an AI-powered
+              PowerPoint assistant that enables natural language slide editing.
+            </p>
+
+            <p>Here are some technologies I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            {skills.map((skill, i) => (
+              <li key={i}>{skill}</li>
+            ))}
           </ul>
         </StyledText>
 
@@ -169,9 +175,7 @@ const About = () => {
               className="img"
               src="https://i.ibb.co/YNzYWLL/IMG-20230311-171018-2.jpg"
               width={500}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Abhinandan"
             />
           </div>
         </StyledPic>
