@@ -7,6 +7,6 @@ range: 'Sep 2024 - Present'
 url: 'https://www.goldmansachs.com/'
 ---
 
-- Upgraded a crucial service from Java 11 to 17 and Springboot 2 to 3, improving the performance tests by 37%.
-- Created dependency comparison scripts for automating the upgradation of other services.
-- Worked on BAU work for Marcus- Goldman retail banking solution
+- Engineered backend services for a client onboarding platform, utilizing Java and DynamoDB to build scalable, high-throughput data processing workflows.
+- Built backend automation platform for enterprise reporting workflows, designing scalable services and internal APIs with MCP enablement.
+- Implemented Prometheus monitoring and alerting pipelines with PagerDuty integration for production services.
