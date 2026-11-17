@@ -7,6 +7,21 @@
 const path = require('path');
 const _ = require('lodash');
 
+// Explicit types for bucket-list frontmatter so the build never breaks when a
+// field (e.g. media or thumb) is empty in every markdown file.
+exports.createSchemaCustomization = ({ actions }) => {
+  actions.createTypes(`
+    type MarkdownRemarkFrontmatter {
+      order: Int
+      status: String
+      emoji: String
+      vibe: String
+      media: String
+      thumb: String
+    }
+  `);
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);
