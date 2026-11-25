@@ -147,10 +147,8 @@ const About = () => {
             </p>
 
             <p>
-              Currently, I work as a Software Developer at Goldman Sachs, where I build and
-              maintain backend services powering large-scale financial systems. My work involves
-              designing reliable APIs, optimizing service performance, and building scalable data
-              models using technologies like Java, Spring Boot, and DynamoDB.
+              I’m a Member of Technical Staff at Salesforce. Previously, I built backend services
+              and internal APIs at Goldman Sachs using Java, Spring Boot, and DynamoDB.
             </p>
 
             <p>

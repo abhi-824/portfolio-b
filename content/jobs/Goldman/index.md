@@ -3,7 +3,7 @@ date: '2024-09-09'
 title: 'Software Developer Analyst'
 company: 'Goldman Sachs'
 location: 'Bangalore, Karnataka'
-range: 'Sep 2024 - Present'
+range: 'Sep 2024 - Jul 2026'
 url: 'https://www.goldmansachs.com/'
 ---
 
